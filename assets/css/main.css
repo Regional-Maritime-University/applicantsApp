@@ -1,0 +1,968 @@
+a,
+abbr,
+acronym,
+address,
+applet,
+article,
+aside,
+audio,
+b,
+big,
+blockquote,
+body,
+canvas,
+caption,
+center,
+cite,
+code,
+dd,
+del,
+details,
+dfn,
+div,
+dl,
+dt,
+em,
+embed,
+fieldset,
+figcaption,
+figure,
+footer,
+form,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+header,
+hgroup,
+html,
+i,
+iframe,
+img,
+ins,
+kbd,
+label,
+legend,
+li,
+main,
+mark,
+menu,
+nav,
+object,
+ol,
+output,
+p,
+pre,
+q,
+ruby,
+s,
+samp,
+section,
+small,
+span,
+strike,
+strong,
+sub,
+summary,
+sup,
+table,
+tbody,
+td,
+tfoot,
+th,
+thead,
+time,
+tr,
+tt,
+u,
+ul,
+var,
+video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font-family: inherit;
+	vertical-align: baseline;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+menu,
+nav,
+section {
+	display: block;
+}
+
+[hidden] {
+	display: none;
+}
+
+*,
+::after,
+::before {
+	box-sizing: border-box;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+ol,
+ul {
+	list-style: none;
+}
+
+blockquote,
+q {
+	quotes: none;
+}
+
+blockquote:after,
+blockquote:before,
+q:after,
+q:before,
+p:after,
+p:before {
+	content: "";
+	content: none;
+}
+
+input,
+select,
+textarea,
+.div-container,
+.photo-upload-area {
+	max-width: 25rem !important;
+}
+
+input,
+select,
+textarea,
+.photo-upload-area {
+	font-size: 14px !important;
+	line-height: 1.5 !important;
+}
+
+input.transform-text,
+select.transform-text,
+textarea.transform-text {
+	text-transform: uppercase;
+	background-color: #f9f9f9 !important;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+body,
+html {
+	min-height: 100vh;
+}
+
+body {
+	min-height: 100vw;
+}
+
+html {
+	font-size: 14px !important;
+}
+
+b,
+strong {
+	font-weight: 700;
+}
+
+.hide {
+	display: none !important;
+}
+.display {
+	display: block !important;
+}
+
+#bg-img {
+	background-image: url("../images/bg-01.jpg");
+	width: 100% !important;
+	height: 100% !important;
+	position: fixed;
+	background-size: cover;
+}
+
+a {
+	color: #004d99 !important;
+	text-decoration: none !important;
+	line-height: 1.5;
+}
+
+a.active {
+	font-weight: 700 !important;
+}
+
+a:hover {
+	font-weight: bolder !important;
+	cursor: pointer;
+}
+
+/*
+    PAGE LAYOUT
+*/
+
+.card {
+	box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.1), 0 4px 20px 0 rgba(0, 0, 0, 0.1);
+}
+
+/*
+    top-nav-bar Layout
+*/
+
+header {
+	width: 100% !important;
+}
+
+.top-nav-bar,
+.index-page {
+	width: 100% !important;
+	background-color: #fff !important;
+	border: none !important;
+	z-index: 999 !important;
+}
+
+.top-nav-bar {
+	height: 130px !important;
+	position: fixed !important;
+}
+
+.index-page {
+	height: 80px !important;
+	background-color: #003262 !important;
+	position: relative !important;
+}
+
+.top-nav-bar .info-card {
+	height: 25% !important;
+	background-color: #003262 !important;
+	background: linear-gradient(180deg, #003262 0, #002549);
+}
+
+.info-card {
+	width: 100% !important;
+	display: flex !important;
+	flex-direction: row !important;
+	align-items: center;
+	justify-content: space-between;
+	color: #fff;
+}
+
+label {
+	font-size: 16px;
+	font-weight: 700;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+label {
+	color: #353535;
+}
+
+h1 {
+	font-size: 22px !important;
+	padding-bottom: 15px !important;
+	font-weight: 700 !important;
+}
+
+.fieldset,
+.right-section,
+.fieldset-col,
+.contact-area {
+	margin-bottom: 30px !important;
+	border-radius: 5px;
+}
+
+.fieldset,
+.right-section,
+.fieldset-col,
+.page-control,
+.fp-footer {
+	border-top: 1px solid #ccc;
+}
+
+.fieldset,
+.fieldset-col,
+.page-control {
+	padding: 30px 0px !important;
+}
+
+.right-section {
+	padding: 30px 20px;
+}
+
+.contact-area {
+	border: 1px solid #ccc;
+	padding: 10px 20px !important;
+}
+
+.fieldset {
+	display: flex !important;
+	flex-direction: row !important;
+	justify-content: space-between;
+}
+
+.fieldset-col {
+	display: flex !important;
+	flex-direction: column !important;
+	justify-content: space-between;
+}
+
+.fieldset > .field-content {
+	float: left !important;
+	padding: 0;
+}
+
+fieldset legend {
+	margin-bottom: 25px !important;
+	padding: 0;
+	color: #202020;
+	font-weight: bolder;
+}
+
+.input-required {
+	color: red;
+}
+
+#appForm {
+	margin-top: 15px !important;
+}
+
+.form-control-login,
+.form-btn-login {
+	padding: 12px !important;
+}
+
+.form-btn-login {
+	max-width: 280px !important;
+	width: 100% !important;
+	margin-top: 10px !important;
+	background-color: #003262 !important;
+	border: 1px solid #003262 !important;
+	border-color: transparent !important;
+	font-size: 16px !important;
+}
+
+.form-btn-login:hover {
+	background-color: #004d99 !important;
+	border: 1px solid #004d99 !important;
+	border-color: transparent !important;
+}
+
+.yes-disability,
+.not-english-native {
+	display: none !important;
+}
+
+.radio-btn {
+	margin-right: 10px;
+	padding: 5px 8px;
+	border: 1px solid #ccc;
+	border-radius: 7px;
+}
+
+.photo-display {
+	width: 150px !important;
+	height: 150px !important;
+	/*background: red;*/
+	border-radius: 5px;
+	border: 1px solid #aaa;
+	background: #f1f1f1;
+}
+
+.photo-display > img {
+	width: 100% !important;
+}
+
+.photo-display > img {
+	width: 100% !important;
+	height: 100% !important;
+	border-radius: 5px;
+}
+
+#app-photo {
+	border-color: none !important;
+	border: 0;
+}
+
+.edu-history {
+	width: 100% !important;
+	/*height: 120px !important;*/
+	background-color: #fff !important;
+	border: 1px solid #ccc !important;
+	border-radius: 5px !important;
+	display: flex !important;
+	flex-direction: column !important;
+}
+.edu-history-header {
+	width: 100% !important;
+	height: 84px !important;
+	background-color: #fff !important;
+	display: flex !important;
+	flex-direction: row !important;
+	justify-content: space-between !important;
+}
+
+.edu-history-header-info {
+	width: 80% !important;
+	height: 100% !important;
+	padding: 10px 20px !important;
+}
+
+.edu-history-control {
+	width: 90px !important;
+	height: 50px !important;
+	background-color: #e6e6e6 !important;
+	display: flex !important;
+	flex-direction: row !important;
+	justify-content: space-between !important;
+	padding: 0 !important;
+	margin: 0 !important;
+}
+
+.edu-history-footer {
+	width: 100% !important;
+	height: 36px !important;
+	background-color: #ffffb3 !important;
+	margin: 0 !important;
+	padding: 0 !important;
+	display: flex !important;
+	flex-direction: row !important;
+	padding: 6px 20px !important;
+}
+
+.edit-edu-btn,
+.delete-edu-btn {
+	width: 50% !important;
+	padding: 10px !important;
+	border: none !important;
+	border-radius: 0px !important;
+}
+.edit-edu-btn:hover,
+.delete-edu-btn:hover {
+	background-color: #ff9900 !important;
+}
+.delete-edu-btn:hover {
+	border-top-right-radius: 5px !important;
+}
+
+.form-checked::after {
+	content: url("../images/icons8-checkmark-24.png");
+	position: relative;
+	width: 24px;
+	height: 24px;
+	transform: scale(0.8); /* scales the image down to 50% */
+}
+
+.steps {
+	margin: auto 20% !important;
+}
+
+/*
+Flex styles
+*/
+
+.flex-container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.flex-container > div {
+	height: 100% !important;
+	width: 100% !important;
+}
+
+.flex-column {
+	display: flex !important;
+	flex-direction: column !important;
+}
+
+.flex-row {
+	display: flex !important;
+	flex-direction: column !important;
+}
+
+.justify-center {
+	justify-content: center !important;
+}
+
+.justify-space-between {
+	justify-content: space-between !important;
+}
+
+.justify-space-around {
+	justify-content: space-around !important;
+}
+
+.align-items-center {
+	align-items: center !important;
+}
+
+.align-items-baseline {
+	align-items: baseline !important;
+}
+
+.form-control,
+.form-select {
+	padding: 8px 10px !important;
+	border-radius: 5px !important;
+	border: 1px solid #888 !important;
+}
+
+/*
+From rmu_admin_new
+*/
+
+body {
+	/*was 000*/
+	font-family: "Ubuntu", sans-serif !important;
+	font-weight: 400;
+	-webkit-overflow-scrolling: touch;
+	overflow-x: hidden !important;
+	overflow-y: auto;
+	width: 100%;
+	line-height: 1;
+	background-color: #fff !important;
+	color: #282828 !important;
+	font-size: 15px !important;
+}
+
+#wrapper {
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	width: 100% !important;
+	height: 100% !important;
+	position: relative !important;
+}
+
+main {
+	width: 100%;
+	height: 100%;
+	flex: 1;
+}
+
+.fp-header,
+.fp-footer {
+	width: 100% !important;
+}
+
+.fp-header {
+	background-color: #003262 !important;
+	position: fixed !important;
+	top: 0;
+	left: 0;
+	right: 0;
+	box-shadow: 0 0 25px 0 black;
+	z-index: 999 !important;
+	width: 100% !important;
+}
+
+.info-board {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	align-items: center;
+}
+
+.fp-header > .info-board {
+	width: 100% !important;
+	height: 40px !important;
+	background-color: #fff !important;
+}
+
+.fp-header > .logo-board,
+.fp-header > .container {
+	width: 100% !important;
+	height: 80px !important;
+}
+
+.fp-header > .row {
+	align-items: center;
+}
+
+.info-board > .info-board-items {
+	height: 100%;
+	width: 100%;
+}
+
+.info-board-items {
+	display: flex;
+	justify-content: center;
+}
+
+.board-items {
+	text-align: center;
+}
+
+.info-board-items > .board-items {
+	height: 100%;
+	align-items: center;
+	margin-right: 25px;
+	padding: 8px 0px;
+}
+
+.board-items .bi {
+	color: #003262 !important;
+	font-size: larger !important;
+}
+
+.board-items .info {
+	text-decoration: none !important;
+}
+
+.fp-footer {
+	display: flex !important;
+	flex-direction: column !important;
+	justify-content: center !important;
+	align-self: flex-end !important;
+	align-items: center !important;
+	text-align: center !important;
+	line-height: 1.2 !important;
+	height: 60px !important;
+	color: #003262 !important;
+	width: 100% !important;
+	/*background-color: #002549;*/
+}
+
+.items {
+	display: flex !important;
+	flex-direction: row !important;
+	align-items: center;
+	height: inherit;
+}
+
+.items > img,
+.items > span {
+	padding: 2px 7px !important;
+}
+
+.rmu-logo-letter {
+	font-family: "Ubuntu", sans-serif;
+	color: #fff;
+}
+
+.rmu-logo-letter {
+	font-family: "Ubuntu", sans-serif;
+	color: #fff;
+}
+
+.rmu-logo-letter.logo-letter {
+	font-size: 22px !important;
+	font-weight: 600 !important;
+	letter-spacing: 0rem !important;
+}
+
+.rmu-logo-letter.description {
+	font-size: 18px !important;
+	letter-spacing: 0.4rem !important;
+}
+
+.easy-apply > h1 {
+	text-align: center;
+}
+
+.login {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+.easy-apply,
+.login {
+	padding: 120px 0 50px 0;
+}
+
+.login .reduce-pad-bottom,
+.easy-apply .reduce-pad-bottom {
+	padding-bottom: 0 !important;
+}
+
+.app-steps-section,
+.login-section {
+	padding: 0px 110px !important;
+}
+
+.app-steps-section {
+	background-color: #f1f1f1 !important;
+}
+
+.login-section {
+	background-color: #fff !important;
+}
+
+.app-step {
+	padding: 5px 10px;
+	margin-bottom: 5px;
+}
+
+div .col-1 {
+	font-size: 20px;
+	background-color: #003262;
+	height: 100%;
+	padding: 5px 10px;
+	color: #fff;
+	border-radius: 8px;
+}
+
+form {
+	margin: 0 0 !important;
+}
+
+.app-sections-menu {
+	position: fixed;
+	top: 0;
+	right: -100%;
+	width: 100%;
+	height: 100vh;
+	background-color: #fff;
+	z-index: 999;
+	padding: 25px;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+	transition: transform 0.3s ease-out, right 0.3s ease-out;
+}
+
+.app-sections-menu.open {
+	transform: translateX(0); /* slide in from the right */
+	right: 0;
+}
+
+.app-sections-menu.close {
+	transform: translateX(0); /* slide out to the right */
+	right: -100%;
+}
+
+.close-sections-menu,
+.open-sections-menu {
+	cursor: pointer !important;
+}
+
+/*Small devices (landscape phones, 576px and up)*/
+@media (max-width: 424.99px) {
+	.steps {
+		margin: auto 3% !important;
+	}
+
+	label {
+		font-size: 14px;
+		font-weight: bolder;
+	}
+
+	fieldset legend {
+		font-size: 16px;
+	}
+
+	#sign-out-1 {
+		display: none !important;
+	}
+
+	input,
+	select,
+	textarea,
+	.photo-upload-area {
+		max-width: 100% !important;
+		min-width: 100% !important;
+	}
+}
+
+/*Small devices (landscape phones, 576px and up)*/
+@media (max-width: 575.99px) {
+	.steps {
+		margin: auto 15% !important;
+	}
+
+	label {
+		font-size: 14px;
+		font-weight: bolder;
+	}
+
+	fieldset legend {
+		font-size: 16px;
+	}
+
+	#sign-out-1 {
+		display: none !important;
+	}
+
+	input,
+	select,
+	textarea,
+	.div-container,
+	.photo-upload-area {
+		max-width: 25rem !important;
+		/*font-size: 14px !important;*/
+		line-height: 1.5 !important;
+	}
+}
+
+/*Small devices (landscape phones, 576px and up)*/
+@media (min-width: 576px) {
+	label {
+		font-size: 14px;
+		font-weight: bolder;
+	}
+
+	fieldset legend {
+		font-size: 16px;
+	}
+}
+
+/*Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+	h1 {
+		font-size: 28px !important;
+		padding-bottom: 15px !important;
+		font-weight: 700 !important;
+	}
+
+	label {
+		/*font-size: 14px;*/
+		font-weight: bolder;
+	}
+
+	fieldset legend {
+		font-size: 18px;
+	}
+
+	.app-process-info {
+		padding: 20px 30px;
+	}
+
+	.info-card,
+	.logo-board {
+		padding: 0 0 !important;
+	}
+
+	fieldset > .field-header {
+		width: 100% !important;
+		max-width: 250px !important;
+		margin-right: 15px;
+	}
+
+	fieldset > .field-content {
+		width: 100% !important;
+		margin-left: 15px;
+	}
+
+	.open-sections-menu,
+	.app-sections-menu {
+		display: none !important;
+	}
+
+	#sign-out-1 {
+		display: block !important;
+	}
+
+	#logout-icon {
+		display: none !important;
+	}
+}
+
+@media (max-width: 767.99px) {
+	/* For mobile phones: */
+
+	h1 {
+		font-size: 22px !important;
+		padding-bottom: 15px !important;
+		font-weight: 700 !important;
+	}
+
+	main {
+		padding: 0 18px !important;
+	}
+
+	label {
+		font-size: 14px !important;
+		font-weight: bolder !important;
+	}
+
+	/*body {
+		overflow: none;
+	}*/
+
+	.form-control {
+		width: 100% !important;
+	}
+
+	.app-steps-section,
+	.login-section {
+		padding: 0px 15px !important;
+	}
+
+	.easy-apply {
+		padding-bottom: 50px !important;
+	}
+	.login {
+		padding-top: 50px !important;
+		padding-bottom: 50px !important;
+	}
+
+	.rmu-logo-letter.logo-letter {
+		font-size: 12px !important;
+		font-weight: 600 !important;
+		letter-spacing: 0rem !important;
+	}
+
+	.rmu-logo-letter.description {
+		font-size: 12px !important;
+		letter-spacing: 0.3rem !important;
+	}
+
+	.items > img,
+	.items > span {
+		padding: 2px 15px !important;
+	}
+
+	#sections-process,
+	#sign-out-1 {
+		display: none !important;
+	}
+
+	.board-items .bi {
+		font-size: smaller !important;
+	}
+
+	.board-items .info {
+		font-size: smaller !important;
+	}
+}
+
+/*Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+}
+
+/*Large devices (desktops, 992px and up) */
+@media (max-width: 991.99px) {
+	.app-steps-section,
+	.login-section {
+		padding: 0px 15px !important;
+	}
+}
+
+/*X-Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+}
+
+/*XX-Large devices (larger desktops, 1400px and up) */
+@media (min-width: 1400px) {
+}

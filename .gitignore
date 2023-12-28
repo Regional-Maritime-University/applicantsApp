@@ -1,0 +1,4 @@
+/vendor
+.env
+/apply/docs
+/apply/photos
